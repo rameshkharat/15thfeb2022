@@ -1,0 +1,12 @@
+name: functions
+on: push
+jobs:
+  function-any:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check1
+        run: |
+          echo ${{ contains('hello', 'll') }}
+          echo ${{ startsWith('hello', 'he') }}
+          echo ${{ endsWith('hello', 'lo') }}
+          echo ${{ format('hello {0} {1} {2}', 'World', '!', '!') }} 
