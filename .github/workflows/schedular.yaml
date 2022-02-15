@@ -11,3 +11,4 @@ jobs:
         run: |
           ls
           pwd
+          cat /etc/os-release
